@@ -1,8 +1,7 @@
-%%writefile app.py
 import streamlit as st
 st.title('Sentimental Analysis')
 import pandas as pd
-df = pd.read_csv('/content/inshort_news.csv')
+df = pd.read_csv('inshort_news.csv')
 x = df.iloc[:, -1]
 y = df.iloc[:, 1]
 
